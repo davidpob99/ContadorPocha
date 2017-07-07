@@ -1,0 +1,994 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.davidpob99.ContadorPocha.CincoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            tools:ignore="UselessParent">
+
+            <EditText
+                android:id="@+id/CeditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/jug1"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/CtextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/CeditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/Cbutton1"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton2"
+                android:layout_alignBottom="@+id/Cbutton2"
+                android:layout_marginLeft="38dp"
+                android:layout_marginStart="38dp"
+                android:layout_toEndOf="@+id/CimageView1"
+                android:layout_toRightOf="@+id/CimageView1"
+                android:width="5sp"
+                android:text="@string/tres" />
+
+            <Button
+                android:id="@+id/Cbutton2"
+                android:layout_width="44dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView1"
+                android:layout_toEndOf="@+id/Cbutton1"
+                android:layout_toRightOf="@+id/Cbutton1"
+                android:width="5sp"
+                android:text="@string/cuatro" />
+
+            <Button
+                android:id="@+id/Cbutton3"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView1"
+                android:layout_toEndOf="@+id/Cbutton2"
+                android:layout_toRightOf="@+id/Cbutton2"
+                android:width="5sp"
+                android:text="@string/cinco" />
+
+            <Button
+                android:id="@+id/Cbutton4"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView1"
+                android:layout_toEndOf="@+id/Cbutton3"
+                android:layout_toRightOf="@+id/Cbutton3"
+                android:width="5sp"
+                android:text="@string/seis" />
+
+            <Button
+                android:id="@+id/Cbutton5"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton4"
+                android:layout_alignBottom="@+id/Cbutton4"
+                android:layout_toEndOf="@+id/Cbutton4"
+                android:layout_toRightOf="@+id/Cbutton4"
+                android:width="5sp"
+                android:text="@string/siete" />
+
+            <Button
+                android:id="@+id/Cbutton6"
+                android:layout_width="44dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton5"
+                android:layout_alignBottom="@+id/Cbutton5"
+                android:layout_toEndOf="@+id/Cbutton5"
+                android:layout_toRightOf="@+id/Cbutton5"
+                android:width="5sp"
+                android:text="@string/ocho" />
+
+            <Button
+                android:id="@+id/Cbutton7"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Cbutton1"
+                android:layout_alignStart="@+id/Cbutton1"
+                android:layout_below="@+id/Cbutton1"
+                android:width="5sp"
+                android:text="@string/tres" />
+
+            <Button
+                android:id="@+id/Cbutton8"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton9"
+                android:layout_alignBottom="@+id/Cbutton9"
+                android:layout_toEndOf="@+id/Cbutton7"
+                android:layout_toRightOf="@+id/Cbutton7"
+                android:width="5sp"
+                android:text="@string/cuatro" />
+
+            <Button
+                android:id="@+id/Cbutton9"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton10"
+                android:layout_alignBottom="@+id/Cbutton10"
+                android:layout_toEndOf="@+id/Cbutton2"
+                android:layout_toRightOf="@+id/Cbutton2"
+                android:width="5sp"
+                android:text="@string/cinco" />
+
+            <Button
+                android:id="@+id/Cbutton10"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Cbutton2"
+                android:layout_toEndOf="@+id/Cbutton9"
+                android:layout_toRightOf="@+id/Cbutton9"
+                android:width="5sp"
+                android:text="@string/seis" />
+
+            <Button
+                android:id="@+id/Cbutton11"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton10"
+                android:layout_alignBottom="@+id/Cbutton10"
+                android:layout_toEndOf="@+id/Cbutton10"
+                android:layout_toRightOf="@+id/Cbutton10"
+                android:width="5sp"
+                android:text="@string/siete" />
+
+            <Button
+                android:id="@+id/Cbutton12"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton11"
+                android:layout_alignBottom="@+id/Cbutton11"
+                android:layout_toEndOf="@+id/Cbutton11"
+                android:layout_toRightOf="@+id/Cbutton11"
+                android:width="5sp"
+                android:text="@string/ocho" />
+
+            <ImageView
+                android:id="@+id/CimageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Cbutton1"
+                android:layout_alignLeft="@+id/CtextView1"
+                android:layout_alignStart="@+id/CtextView1"
+                android:layout_below="@+id/CtextView1"
+                android:adjustViewBounds="false"
+                app:srcCompat="@drawable/ic_add_black_24dp"
+                tools:ignore="VectorDrawableCompat"
+                android:contentDescription=""
+                android:tint="@android:color/holo_red_light"/>
+
+            <ImageView
+                android:id="@+id/CimageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Cbutton7"
+                android:layout_alignEnd="@+id/CimageView1"
+                android:layout_alignLeft="@+id/CimageView1"
+                android:layout_alignRight="@+id/CimageView1"
+                android:layout_alignStart="@+id/CimageView1"
+                android:layout_below="@+id/CimageView1"
+                android:contentDescription=""
+                app:srcCompat="@drawable/ic_remove_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <!-- HASTA AQUÍ-->
+
+
+
+            <EditText
+                android:id="@+id/CeditText101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/jug2"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_below="@+id/Cbutton7"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/CtextView101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/CeditText101"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/Cbutton101"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton102"
+                android:layout_alignBottom="@+id/Cbutton102"
+                android:layout_marginLeft="38dp"
+                android:layout_marginStart="38dp"
+                android:layout_toEndOf="@+id/CimageView101"
+                android:layout_toRightOf="@+id/CimageView101"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:width="5sp"
+                android:text="@string/tres" />
+
+            <Button
+                android:id="@+id/Cbutton102"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView101"
+                android:layout_toEndOf="@+id/Cbutton101"
+                android:layout_toRightOf="@+id/Cbutton101"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:width="5sp"
+                android:text="@string/cuatro" />
+
+            <Button
+                android:id="@+id/Cbutton103"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView101"
+                android:layout_toEndOf="@+id/Cbutton102"
+                android:layout_toRightOf="@+id/Cbutton102"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:width="5sp"
+                android:text="@string/cinco" />
+
+            <Button
+                android:id="@+id/Cbutton104"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView101"
+                android:layout_toEndOf="@+id/Cbutton103"
+                android:layout_toRightOf="@+id/Cbutton103"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:width="5sp"
+                android:text="@string/seis" />
+
+            <Button
+                android:id="@+id/Cbutton105"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton104"
+                android:layout_alignBottom="@+id/Cbutton104"
+                android:layout_toEndOf="@+id/Cbutton104"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:layout_toRightOf="@+id/Cbutton104"
+                android:width="5sp"
+                android:text="@string/siete" />
+
+            <Button
+                android:id="@+id/Cbutton106"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton105"
+                android:layout_alignBottom="@+id/Cbutton105"
+                android:layout_toEndOf="@+id/Cbutton105"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:layout_toRightOf="@+id/Cbutton105"
+                android:width="5sp"
+                android:text="@string/ocho" />
+
+            <Button
+                android:id="@+id/Cbutton107"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Cbutton101"
+                android:layout_alignStart="@+id/Cbutton101"
+                android:layout_below="@+id/Cbutton101"
+                android:width="5sp"
+                android:text="@string/tres" />
+
+            <Button
+                android:id="@+id/Cbutton108"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton109"
+                android:layout_alignBottom="@+id/Cbutton109"
+                android:layout_toEndOf="@+id/Cbutton107"
+                android:layout_toRightOf="@+id/Cbutton107"
+                android:width="5sp"
+                android:text="@string/cuatro" />
+
+            <Button
+                android:id="@+id/Cbutton109"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton1010"
+                android:layout_alignBottom="@+id/Cbutton1010"
+                android:layout_toEndOf="@+id/Cbutton102"
+                android:layout_toRightOf="@+id/Cbutton102"
+                android:width="5sp"
+                android:text="@string/cinco" />
+
+            <Button
+                android:id="@+id/Cbutton1010"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Cbutton102"
+                android:layout_toEndOf="@+id/Cbutton109"
+                android:layout_toRightOf="@+id/Cbutton109"
+                android:width="5sp"
+                android:text="@string/seis" />
+
+            <Button
+                android:id="@+id/Cbutton1011"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton1010"
+                android:layout_alignBottom="@+id/Cbutton1010"
+                android:layout_toEndOf="@+id/Cbutton1010"
+                android:layout_toRightOf="@+id/Cbutton1010"
+                android:width="5sp"
+                android:text="@string/siete" />
+
+            <Button
+                android:id="@+id/Cbutton1012"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton1011"
+                android:layout_alignBottom="@+id/Cbutton1011"
+                android:layout_toEndOf="@+id/Cbutton1011"
+                android:layout_toRightOf="@+id/Cbutton1011"
+                android:width="5sp"
+                android:text="@string/ocho" />
+
+            <ImageView
+                android:id="@+id/CimageView101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Cbutton101"
+                android:layout_alignLeft="@+id/CtextView101"
+                android:layout_alignStart="@+id/CtextView101"
+                android:layout_below="@+id/CtextView101"
+                android:adjustViewBounds="false"
+                android:tint="@android:color/holo_blue_light"
+                app:srcCompat="@drawable/ic_add_black_24dp"
+                tools:ignore="VectorDrawableCompat"
+                android:contentDescription="" />
+
+            <ImageView
+                android:id="@+id/CimageView102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Cbutton107"
+                android:layout_alignEnd="@+id/CimageView101"
+                android:layout_alignLeft="@+id/CimageView101"
+                android:layout_alignRight="@+id/CimageView101"
+                android:layout_alignStart="@+id/CimageView101"
+                android:layout_below="@+id/CimageView101"
+                android:contentDescription=""
+                app:srcCompat="@drawable/ic_remove_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+
+            <!-- HASTA AQUÍ-->
+
+            <EditText
+                android:id="@+id/CeditText201"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/jug3"
+                android:textAlignment="center"
+                android:cursorVisible="false"
+                android:textColor="@android:color/holo_green_light"
+                android:layout_below="@+id/Cbutton107"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/CtextView201"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/CeditText201"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/Cbutton201"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:layout_alignBaseline="@+id/Cbutton202"
+                android:layout_alignBottom="@+id/Cbutton202"
+                android:layout_marginLeft="38dp"
+                android:layout_marginStart="38dp"
+                android:layout_toEndOf="@+id/CimageView201"
+                android:layout_toRightOf="@+id/CimageView201"
+                android:width="5sp"
+                android:text="@string/tres" />
+
+            <Button
+                android:id="@+id/Cbutton202"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView201"
+                android:layout_toEndOf="@+id/Cbutton201"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:layout_toRightOf="@+id/Cbutton201"
+                android:width="5sp"
+                android:text="@string/cuatro" />
+
+            <Button
+                android:id="@+id/Cbutton203"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView201"
+                android:layout_toEndOf="@+id/Cbutton202"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:layout_toRightOf="@+id/Cbutton202"
+                android:width="5sp"
+                android:text="@string/cinco" />
+
+            <Button
+                android:id="@+id/Cbutton204"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView201"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:layout_toEndOf="@+id/Cbutton203"
+                android:layout_toRightOf="@+id/Cbutton203"
+                android:width="5sp"
+                android:text="@string/seis" />
+
+            <Button
+                android:id="@+id/Cbutton205"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton204"
+                android:layout_alignBottom="@+id/Cbutton204"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:layout_toEndOf="@+id/Cbutton204"
+                android:layout_toRightOf="@+id/Cbutton204"
+                android:width="5sp"
+                android:text="@string/siete" />
+
+            <Button
+                android:id="@+id/Cbutton206"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:layout_alignBaseline="@+id/Cbutton205"
+                android:layout_alignBottom="@+id/Cbutton205"
+                android:layout_toEndOf="@+id/Cbutton205"
+                android:layout_toRightOf="@+id/Cbutton205"
+                android:width="5sp"
+                android:text="@string/ocho" />
+
+            <Button
+                android:id="@+id/Cbutton207"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Cbutton201"
+                android:layout_alignStart="@+id/Cbutton201"
+                android:layout_below="@+id/Cbutton201"
+                android:width="5sp"
+                android:text="@string/tres" />
+
+            <Button
+                android:id="@+id/Cbutton208"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton209"
+                android:layout_alignBottom="@+id/Cbutton209"
+                android:layout_toEndOf="@+id/Cbutton207"
+                android:layout_toRightOf="@+id/Cbutton207"
+                android:width="5sp"
+                android:text="@string/cuatro" />
+
+            <Button
+                android:id="@+id/Cbutton209"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton2010"
+                android:layout_alignBottom="@+id/Cbutton2010"
+                android:layout_toEndOf="@+id/Cbutton202"
+                android:layout_toRightOf="@+id/Cbutton202"
+                android:width="5sp"
+                android:text="@string/cinco" />
+
+            <Button
+                android:id="@+id/Cbutton2010"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Cbutton202"
+                android:layout_toEndOf="@+id/Cbutton209"
+                android:layout_toRightOf="@+id/Cbutton209"
+                android:width="5sp"
+                android:text="@string/seis" />
+
+            <Button
+                android:id="@+id/Cbutton2011"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton2010"
+                android:layout_alignBottom="@+id/Cbutton2010"
+                android:layout_toEndOf="@+id/Cbutton2010"
+                android:layout_toRightOf="@+id/Cbutton2010"
+                android:width="5sp"
+                android:text="@string/siete" />
+
+            <Button
+                android:id="@+id/Cbutton2012"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton2011"
+                android:layout_alignBottom="@+id/Cbutton2011"
+                android:layout_toEndOf="@+id/Cbutton2011"
+                android:layout_toRightOf="@+id/Cbutton2011"
+                android:width="5sp"
+                android:text="@string/ocho" />
+
+            <ImageView
+                android:id="@+id/CimageView201"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Cbutton201"
+                android:layout_alignLeft="@+id/CtextView201"
+                android:layout_alignStart="@+id/CtextView201"
+                android:layout_below="@+id/CtextView201"
+                android:adjustViewBounds="false"
+                android:tint="@android:color/holo_green_light"
+                app:srcCompat="@drawable/ic_add_black_24dp"
+                tools:ignore="VectorDrawableCompat"
+                android:contentDescription="" />
+
+            <ImageView
+                android:id="@+id/CimageView202"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Cbutton207"
+                android:layout_alignEnd="@+id/CimageView201"
+                android:layout_alignLeft="@+id/CimageView201"
+                android:layout_alignRight="@+id/CimageView201"
+                android:layout_alignStart="@+id/CimageView201"
+                android:layout_below="@+id/CimageView201"
+                android:contentDescription=""
+                app:srcCompat="@drawable/ic_remove_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <!-- HASTA AQUÍ-->
+
+            <EditText
+                android:id="@+id/CeditText301"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_below="@+id/Cbutton207"
+                android:hint="@string/jug4"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_purple"
+                android:cursorVisible="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/CtextView301"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/CeditText301"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/Cbutton301"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton302"
+                android:backgroundTint="@android:color/holo_purple"
+                android:layout_alignBottom="@+id/Cbutton302"
+                android:layout_marginLeft="38dp"
+                android:layout_marginStart="38dp"
+                android:layout_toEndOf="@+id/CimageView301"
+                android:layout_toRightOf="@+id/CimageView301"
+                android:width="5sp"
+                android:text="@string/tres" />
+
+            <Button
+                android:id="@+id/Cbutton302"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView301"
+                android:layout_toEndOf="@+id/Cbutton301"
+                android:backgroundTint="@android:color/holo_purple"
+                android:layout_toRightOf="@+id/Cbutton301"
+                android:width="5sp"
+                android:text="@string/cuatro" />
+
+            <Button
+                android:id="@+id/Cbutton303"
+                android:layout_width="44dp"
+                android:backgroundTint="@android:color/holo_purple"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView301"
+                android:layout_toEndOf="@+id/Cbutton302"
+                android:layout_toRightOf="@+id/Cbutton302"
+                android:width="5sp"
+                android:text="@string/cinco" />
+
+            <Button
+                android:id="@+id/Cbutton304"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView301"
+                android:layout_toEndOf="@+id/Cbutton303"
+                android:backgroundTint="@android:color/holo_purple"
+                android:layout_toRightOf="@+id/Cbutton303"
+                android:width="5sp"
+                android:text="@string/seis" />
+
+            <Button
+                android:id="@+id/Cbutton305"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton304"
+                android:layout_alignBottom="@+id/Cbutton304"
+                android:layout_toEndOf="@+id/Cbutton304"
+                android:backgroundTint="@android:color/holo_purple"
+                android:layout_toRightOf="@+id/Cbutton304"
+                android:width="5sp"
+                android:text="@string/siete" />
+
+            <Button
+                android:id="@+id/Cbutton306"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton305"
+                android:layout_alignBottom="@+id/Cbutton305"
+                android:layout_toEndOf="@+id/Cbutton305"
+                android:layout_toRightOf="@+id/Cbutton305"
+                android:backgroundTint="@android:color/holo_purple"
+                android:width="5sp"
+                android:text="@string/ocho" />
+
+            <Button
+                android:id="@+id/Cbutton307"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Cbutton301"
+                android:layout_alignStart="@+id/Cbutton301"
+                android:layout_below="@+id/Cbutton301"
+                android:width="5sp"
+                android:text="@string/tres" />
+
+            <Button
+                android:id="@+id/Cbutton308"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton309"
+                android:layout_alignBottom="@+id/Cbutton309"
+                android:layout_toEndOf="@+id/Cbutton307"
+                android:layout_toRightOf="@+id/Cbutton307"
+                android:width="5sp"
+                android:text="@string/cuatro" />
+
+            <Button
+                android:id="@+id/Cbutton309"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton3010"
+                android:layout_alignBottom="@+id/Cbutton3010"
+                android:layout_toEndOf="@+id/Cbutton302"
+                android:layout_toRightOf="@+id/Cbutton302"
+                android:width="5sp"
+                android:text="@string/cinco" />
+
+            <Button
+                android:id="@+id/Cbutton3010"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Cbutton302"
+                android:layout_toEndOf="@+id/Cbutton309"
+                android:layout_toRightOf="@+id/Cbutton309"
+                android:width="5sp"
+                android:text="@string/seis" />
+
+            <Button
+                android:id="@+id/Cbutton3011"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton3010"
+                android:layout_alignBottom="@+id/Cbutton3010"
+                android:layout_toEndOf="@+id/Cbutton3010"
+                android:layout_toRightOf="@+id/Cbutton3010"
+                android:width="5sp"
+                android:text="@string/siete" />
+
+            <Button
+                android:id="@+id/Cbutton3012"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton3011"
+                android:layout_alignBottom="@+id/Cbutton3011"
+                android:layout_toEndOf="@+id/Cbutton3011"
+                android:layout_toRightOf="@+id/Cbutton3011"
+                android:width="5sp"
+                android:text="@string/ocho" />
+
+            <ImageView
+                android:id="@+id/CimageView301"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Cbutton301"
+                android:layout_alignLeft="@+id/CtextView301"
+                android:layout_alignStart="@+id/CtextView301"
+                android:layout_below="@+id/CtextView301"
+                android:adjustViewBounds="false"
+                app:srcCompat="@drawable/ic_add_black_24dp"
+                android:tint="@android:color/holo_purple"
+                tools:ignore="VectorDrawableCompat"
+                android:contentDescription="" />
+
+            <ImageView
+                android:id="@+id/CimageView302"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Cbutton307"
+                android:layout_alignEnd="@+id/CimageView301"
+                android:layout_alignLeft="@+id/CimageView301"
+                android:layout_alignRight="@+id/CimageView301"
+                android:layout_alignStart="@+id/CimageView301"
+                android:layout_below="@+id/CimageView301"
+                android:contentDescription=""
+                app:srcCompat="@drawable/ic_remove_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+
+            <!-- HASTA AQUÍ-->
+
+
+            <EditText
+                android:id="@+id/CeditText401"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:cursorVisible="false"
+                android:hint="@string/jug5"
+                android:textAlignment="center"
+                android:textColor="#ffeb3b"
+                android:layout_below="@+id/Cbutton307"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/CtextView401"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#ffeb3b"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/CeditText401"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/Cbutton401"
+                android:backgroundTint="#ffeb3b"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton402"
+                android:layout_alignBottom="@+id/Cbutton402"
+                android:layout_marginLeft="38dp"
+                android:layout_marginStart="38dp"
+                android:layout_toEndOf="@+id/CimageView401"
+                android:layout_toRightOf="@+id/CimageView401"
+                android:width="5sp"
+                android:text="@string/tres" />
+
+            <Button
+                android:id="@+id/Cbutton402"
+                android:backgroundTint="#ffeb3b"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView401"
+                android:layout_toEndOf="@+id/Cbutton401"
+                android:layout_toRightOf="@+id/Cbutton401"
+                android:width="5sp"
+                android:text="@string/cuatro" />
+
+            <Button
+                android:id="@+id/Cbutton403"
+                android:backgroundTint="#ffeb3b"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView401"
+                android:layout_toEndOf="@+id/Cbutton402"
+                android:layout_toRightOf="@+id/Cbutton402"
+                android:width="5sp"
+                android:text="@string/cinco" />
+
+            <Button
+                android:id="@+id/Cbutton404"
+                android:backgroundTint="#ffeb3b"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CtextView401"
+                android:layout_toEndOf="@+id/Cbutton403"
+                android:layout_toRightOf="@+id/Cbutton403"
+                android:width="5sp"
+                android:text="@string/seis" />
+
+            <Button
+                android:id="@+id/Cbutton405"
+                android:layout_width="44dp"
+                android:backgroundTint="#ffeb3b"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton404"
+                android:layout_alignBottom="@+id/Cbutton404"
+                android:layout_toEndOf="@+id/Cbutton404"
+                android:layout_toRightOf="@+id/Cbutton404"
+                android:width="5sp"
+                android:text="@string/siete" />
+
+            <Button
+                android:id="@+id/Cbutton406"
+                android:layout_width="44dp"
+                android:backgroundTint="#ffeb3b"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton405"
+                android:layout_alignBottom="@+id/Cbutton405"
+                android:layout_toEndOf="@+id/Cbutton405"
+                android:layout_toRightOf="@+id/Cbutton405"
+                android:width="5sp"
+                android:text="@string/ocho" />
+
+            <Button
+                android:id="@+id/Cbutton407"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Cbutton401"
+                android:layout_alignStart="@+id/Cbutton401"
+                android:layout_below="@+id/Cbutton401"
+                android:width="5sp"
+                android:text="@string/tres" />
+
+            <Button
+                android:id="@+id/Cbutton408"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton409"
+                android:layout_alignBottom="@+id/Cbutton409"
+                android:layout_toEndOf="@+id/Cbutton407"
+                android:layout_toRightOf="@+id/Cbutton407"
+                android:width="5sp"
+                android:text="@string/cuatro" />
+
+            <Button
+                android:id="@+id/Cbutton409"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton4010"
+                android:layout_alignBottom="@+id/Cbutton4010"
+                android:layout_toEndOf="@+id/Cbutton402"
+                android:layout_toRightOf="@+id/Cbutton402"
+                android:width="5sp"
+                android:text="@string/cinco" />
+
+            <Button
+                android:id="@+id/Cbutton4010"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Cbutton402"
+                android:layout_toEndOf="@+id/Cbutton409"
+                android:layout_toRightOf="@+id/Cbutton409"
+                android:width="5sp"
+                android:text="@string/seis" />
+
+            <Button
+                android:id="@+id/Cbutton4011"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton4010"
+                android:layout_alignBottom="@+id/Cbutton4010"
+                android:layout_toEndOf="@+id/Cbutton4010"
+                android:layout_toRightOf="@+id/Cbutton4010"
+                android:width="5sp"
+                android:text="@string/siete" />
+
+            <Button
+                android:id="@+id/Cbutton4012"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cbutton4011"
+                android:layout_alignBottom="@+id/Cbutton4011"
+                android:layout_toEndOf="@+id/Cbutton4011"
+                android:layout_toRightOf="@+id/Cbutton4011"
+                android:width="5sp"
+                android:text="@string/ocho" />
+
+            <ImageView
+                android:id="@+id/CimageView401"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Cbutton401"
+                android:layout_alignLeft="@+id/CtextView401"
+                android:layout_alignStart="@+id/CtextView401"
+                android:layout_below="@+id/CtextView401"
+                android:adjustViewBounds="false"
+                app:srcCompat="@drawable/ic_add_black_24dp"
+                tools:ignore="VectorDrawableCompat"
+                android:tint="#ffeb3b"
+                android:contentDescription="" />
+
+            <ImageView
+                android:id="@+id/CimageView402"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Cbutton407"
+                android:layout_alignEnd="@+id/CimageView401"
+                android:layout_alignLeft="@+id/CimageView401"
+                android:layout_alignRight="@+id/CimageView401"
+                android:layout_alignStart="@+id/CimageView401"
+                android:layout_below="@+id/CimageView401"
+                android:contentDescription=""
+                app:srcCompat="@drawable/ic_remove_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <!-- RESET-->
+
+            <Button
+                android:id="@+id/Creset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Cbutton402"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/ic_refresh_black_24dp"
+                android:layout_marginTop="50dp"
+                android:text="Reiniciar"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

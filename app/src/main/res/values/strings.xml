@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Contador de Pocha</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="tres">3</string>
+    <string name="cuatro">4</string>
+    <string name="cinco">5</string>
+    <string name="seis">6</string>
+    <string name="siete">7</string>
+    <string name="ocho">8</string>
+    <string name="jug1">Jugador 1</string>
+    <string name="jug2">Jugador 2</string>
+    <string name="jug3">Jugador 3</string>
+    <string name="jug4">Jugador 4</string>
+    <string name="jug5">Jugador 5</string>
+    <string name="jug6">Jugador 6</string>
+
+
+    <string name="about">Un simple contador para partidas de pocha \n \n
+        Copyright (C) 2016-2017 David Población Criado \n\n
+        Este programa es libre: puede redistribuirlo y/o modificarlo bajo los términos de GNU General Public License (GPL), versión 3, tal y como está publicada en la Free Software Foundation. \n\n
+        Este programa se distribuye con la esperanza de resultar útil, pero SIN NINGUNA GARANTÍA; incluso sin la garantía implícita de COMERCIABILIDAD o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Ver la GNU General Public License (GPL), versión 3, para
+        más detalles. \n\n</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

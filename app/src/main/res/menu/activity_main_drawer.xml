@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="3 Jugadores" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="4 Jugadores" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="5 Jugadores" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="6 Jugadores" />
+    </group>
+
+
+</menu>
