@@ -4,7 +4,7 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GRXHT9CGJ4L7G)
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=my-website)](https://davidpob99.github.io/ContadorPocha/)
 
-Un simple contador para partidas de pocha. Desarrollado con Android Studio y  Apache Cordova e Ionic Framework (Windows) bajo licencia GPL v3.
+Un simple contador para partidas de pocha.
 
 ## Descargar
 ### Android
