@@ -18,11 +18,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
-        implements View.OnClickListener ,NavigationView.OnNavigationItemSelectedListener, TresFragment.OnFragmentInteractionListener, CuatroFragment.OnFragmentInteractionListener, CincoFragment.OnFragmentInteractionListener, SeisFragment.OnFragmentInteractionListener {
+        implements View.OnClickListener ,NavigationView.OnNavigationItemSelectedListener, TresFragment.OnFragmentInteractionListener, CuatroFragment.OnFragmentInteractionListener, CincoFragment.OnFragmentInteractionListener, SeisFragment.OnFragmentInteractionListener, AboutFragment.OnFragmentInteractionListener {
 
-    Button btngithub;
-    TextView txabout;
-    ImageView imgabout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,10 +37,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        btngithub = (Button)findViewById(R.id.buttongithub);
-        txabout = (TextView) findViewById(R.id.textViewabout);
-        imgabout = (ImageView)findViewById(R.id.imageViewabout);
-        btngithub.setOnClickListener(this);
+        getSupportFragmentManager().beginTransaction().add(R.id.Contenedor, new AboutFragment()).commit();
     }
 
     @Override
@@ -78,12 +72,6 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    public void invisible() {
-        btngithub.setVisibility(View.GONE);
-        txabout.setVisibility(View.GONE);
-        imgabout.setVisibility(View.GONE);
-    }
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -97,25 +85,26 @@ public class MainActivity extends AppCompatActivity
             // Handle the camera action
             fragment = new TresFragment();
             FragmentoSeleccionado = true;
-            invisible();
 
         } else if (id == R.id.nav_gallery) {
 
             fragment = new CuatroFragment();
             FragmentoSeleccionado = true;
-            invisible();
 
         } else if (id == R.id.nav_slideshow) {
 
             fragment = new CincoFragment();
             FragmentoSeleccionado = true;
-            invisible();
 
         } else if (id == R.id.nav_manage) {
 
             fragment = new SeisFragment();
             FragmentoSeleccionado = true;
-            invisible();
+
+        } else if (id == R.id.nav_about) {
+
+        fragment = new AboutFragment();
+        FragmentoSeleccionado = true;
 
         }
 
@@ -135,11 +124,6 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.buttongithub:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://github.com/davidpob99/ContadorPocha"));
-                startActivity(browserIntent);
-                break;
-        }
+
     }
 }

@@ -28,6 +28,7 @@
         Este programa se distribuye con la esperanza de resultar útil, pero SIN NINGUNA GARANTÍA; incluso sin la garantía implícita de COMERCIABILIDAD o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Ver la GNU General Public License (GPL), versión 3, para
         más detalles. \n\n</string>
 
+    <string name="license_icons"></string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
